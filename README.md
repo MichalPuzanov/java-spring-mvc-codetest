@@ -1,3 +1,21 @@
+# Solution
+
+* Used Spring MVC technology with not blocking servlets
+* Base servlet context path is **/api**
+* Server is running on default **port 8080**
+* There are three profiles:
+    1. **upload** - using for uploading customers.json
+    2. **test** - automaticaly set for unit tests
+    3. **noupload** - customers.json is not uploaded
+* Swagger for rest api, which can be more customized. The url for swagger ui is default **/api/swagger-ui.html**
+* Sorting is solved by using SortedSet. The solution is used for demo purpose only
+  and has some limitation:
+    1. there is no validation
+    2. there can't be two records with same records duetime
+* Junit4 is used for testing
+  
+
+
 # Qudini Backend Software Engineer Code Test
 
 **Please _fork_ this repository rather than creating a PR.**
